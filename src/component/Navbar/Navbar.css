@@ -1,0 +1,147 @@
+.navbar {
+	/* width:100%; */
+	height: fit-content;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: var(--black);
+	box-shadow: var(--box-shadow);
+
+}
+
+.nonbtn {
+	color: transparent;
+	background-color: transparent;
+	background-color: transparent;
+	border: 0px;
+}
+
+.logoimg {
+	margin-left: 30px;
+	border-radius: 50px;
+	height: 30px;
+	width: 30px;
+	object-fit: fill;
+	border: 1px solid var(--theme);
+}
+
+.tital {
+	margin-left: 5px;
+	color: var(--theme);
+	font-style: italic;
+	text-decoration: overline underline;
+
+}
+
+.ImgTital {
+	display: flex;
+	align-items: center;
+}
+
+.menue {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding: 0px 10px; */
+
+}
+
+.menue li {
+
+	padding: 0px 5px;
+	color: transparent;
+}
+
+.mBtn:hover {
+	/* background-color: rgb(80, 77, 77); */
+	border-radius: 6px;
+	align-items: center;
+	padding: 0px 5px;
+	border: 1px solid var(--theme);
+	box-shadow: 1px 1px var(--theme);
+}
+
+.searchbox {
+	width: 100%;
+	max-width: 150px;
+	background-color: var(--white);
+	padding: 3px 8px;
+	display: flex;
+	align-items: center;
+	border-radius: 12px;
+	border: 1px solid var(--theme);
+}
+
+.searchbox:hover {
+	box-shadow: 1px 1px var(--theme);
+}
+
+.searchbox input {
+	align-items: flex-end;
+	justify-content: end;
+	width: 100%;
+	max-width: 350px;
+	height: 20px;
+	border: none;
+	outline: none;
+	background-color: var(--white);
+	padding-left: 10PX;
+	font-size: 15PX;
+	color: #8E8E8E;
+
+}
+
+.searchbtn {
+	align-items: flex-end;
+	justify-content: end;
+	width: 90px;
+	border-radius: 50px;
+	color: var(--theme);
+	background-color: var(--black);
+}
+
+.searchbtn:hover {
+
+	box-shadow: 1px 1px var(--theme);
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.menue {
+		display: none;
+	}
+
+	/* hide it elsewhere */
+	.searchbox {
+		display: none;
+	}
+
+	.ImgTital {
+		align-items: center;
+		justify-Content: center;
+		text-align: center;
+
+		padding-left: 50px;
+		align-self: center;
+		padding-left: 10px;
+		align-self: baseline;
+	}
+
+	.ImgTital {
+		padding-left: 10px;
+		justify-content: left;
+
+	}
+
+	.navbar {
+		min-width: 336px;
+	}
+}
+
+/* max 380 */
+
+/* align-items: center;
+justify-Content: center;
+text-align: center;
+
+padding-left: 50px; 
+align-self: center; */

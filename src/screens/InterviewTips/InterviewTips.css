@@ -1,0 +1,12 @@
+
+  .card button{
+   background-color:  var(--theme);
+   border-radius: 3px;
+   border-color:  var(--theme);
+  }
+  
+  .card img{
+	height: 150px;
+	width: 100px;
+	border-radius: 6px;
+  }

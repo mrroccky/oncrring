@@ -1,0 +1,35 @@
+
+.left{
+
+  padding-left: 5px;
+  /* padding-right: 5PX; */
+	width: 60%;
+	float: left;
+  }
+  .left div{
+	
+	white-space: initial;
+	word-break: break-word;
+  }
+.right{
+  /* background-color:var(--white); */
+  float: right;
+  width: 39%;
+ 
+}image.png
+.card{
+box-shadow: var(--box-shadow);
+}
+.searcard{ display: none;}
+/* //mobile  */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.right { display: none; }   /* hide it elsewhere */
+  .left{ width: 100%; }
+
+  .Recentpost{
+    display: none;
+  }
+  }
+
+
+ 

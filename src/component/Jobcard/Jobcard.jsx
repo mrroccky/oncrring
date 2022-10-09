@@ -1,0 +1,36 @@
+import React from 'react'
+import './Jobcard.css';
+import Loading from '../Loading/Loading';
+import { Link } from 'react-router-dom'
+function Jobcard(props) {
+  const { JobPost } = props;
+
+  return (
+
+
+    // <Jobcard key={JobPost.id} JobPost={JobPost} />
+    <>
+      <Link style={{ color: 'black', textDecoration: 'none' }} to={'/detailed?id=' + JobPost.id} >
+        <div className='postCard' >
+          <div className='tcard'><h1 className='font' >{JobPost ? JobPost.tital : <span> error </span>}</h1></div>
+          <span className='font100' style={{marginLeft:'20px'}}>{JobPost.date} by </span>
+          <span className='font100' style={{ color: 'var(--link)'}}>{JobPost.publisher_name}</span>
+          <div className='postImg'>{JobPost ? <img src={"/oncrring/uploads/" + JobPost.image} /> : <Loading />}</div>
+          
+          {JobPost.descreption.split("\n").map(function (descreption) {
+            return (
+              <>   
+                <h2 className='font400'>{descreption}</h2>
+                <n/>
+              </>
+            )
+          })}
+        </div>
+      </Link>
+
+    </>
+
+  )
+}
+
+export default Jobcard    

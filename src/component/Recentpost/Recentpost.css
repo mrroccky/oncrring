@@ -1,0 +1,32 @@
+
+.recentcard{
+  /* margin-right: 10px; */
+	height: max-content;
+	background-color: var(--white);
+  box-shadow:var(--box-shadow);
+  padding-bottom: 20px;
+	
+  }
+  .Recentpost{
+	text-align: center;
+	text-overflow: ellipsis;
+	text-decoration: overline underline;
+	font-weight: bold;
+   font-size: 20px;
+  }
+  .card:hover{
+	border-left: 10px solid var(--black);
+  }
+  .Recentpost:hover{
+   color:var(--theme);
+  }
+  .recenttext{
+    color:var(--theme);
+  }
+ 
+  .links{
+   text-align: center;
+   margin-bottom: 10px;
+   text-overflow: ellipsis;
+   font-weight: 500;
+  }
