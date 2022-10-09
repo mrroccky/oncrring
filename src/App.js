@@ -11,6 +11,7 @@ import InterviewTips from "./screens/InterviewTips/InterviewTips";
 import Jobs from "./screens/Jobs/Jobs";
 import Detailed from "./screens/Detailed/Detailed";
 import Profile from "./screens/profile/profile";
+import Horeku from "./screens/horeku";
 
 
 
@@ -24,6 +25,7 @@ const App =() =>{
       {/* <a href="/Product">About</a> */}
         <Routes>
         <Route exact path="/" element={<Home/>} />
+        <Route exact path="/horeku" element={<Horeku/>} />
         <Route exact path="/jobs" element={<Jobs/>} />
         <Route exact path="/profile" element={<Profile/>} />
         <Route exact path="/topmnc" element={<TopMNC/>} />
