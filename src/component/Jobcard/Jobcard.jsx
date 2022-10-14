@@ -12,6 +12,7 @@ function Jobcard(props) {
     <>
       <Link style={{ color: 'black', textDecoration: 'none' }} to={'/detailed?id=' + JobPost.id} >
         <div className='postCard' >
+          <h1>{JobPost.id}</h1>
           <div className='tcard'><h1 className='font' >{JobPost ? JobPost.tital : <span> error </span>}</h1></div>
           <span className='font100' style={{marginLeft:'20px'}}>{JobPost.date} by </span>
           <span className='font100' style={{ color: 'var(--link)'}}>{JobPost.publisher_name}</span>

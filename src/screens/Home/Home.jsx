@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import './Home.css';
 import Jobcard from '../../component/Jobcard/Jobcard';
 import Ocd from '../../component/ocd/ocd';
@@ -7,14 +7,13 @@ import Loading from '../../component/Loading/Loading';
 import Recentpost from '../../component/Recentpost/Recentpost';
 import Search from '../../component/Search/Search';
 import Menuebuttonst from '../../component/menuebuttonst/menuebuttonst';
-import Footer from '../../component/Footer/Footer';
 
-
+// https://www.stechies.com/
 function Home() {
 
 	const [JobPost, setProducrs] = useState([]);
 	useEffect(() => {
-
+		
 		fetch('/oncrring/jobs.php').then(responce => {
 			return responce.json();
 		}).then(JobPost => {
@@ -26,19 +25,15 @@ function Home() {
 	return (
 		<>
 			<div className='left'>
-				{/* <Menuebuttonst /> */}
+				<Menuebuttonst />
 				<Search />
 				<div className='cardocd'>
-
 					<h1 className='ocd'>HOME</h1>
-
 					{!JobPost ? <Loading /> : JobPost.map(JobPost => <Jobcard key={JobPost.id} JobPost={JobPost}/>)}
 					<Recentpost />
 					<Ocd />
 					<div className='LoadMore'>
 					</div>
-
-
 				</div>
 				{/* <div className='cardocd'>
 					<div className='card'>

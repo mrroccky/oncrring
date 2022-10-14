@@ -1,5 +1,4 @@
 
-import React, { Component } from 'react'
 import Ocd from '../../component/ocd/ocd';
 import Interviewtips from '../../component/onTabsScreens/Interviewtipstab/Interviewtips';
 import Recentpost from '../../component/Recentpost/Recentpost';
