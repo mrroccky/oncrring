@@ -19,13 +19,13 @@ function Home() {
     headers.append('Accept', 'application/json');
     // headers.append('Authorization', 'Basic ' + base64.encode(username + ":" +  password));
     headers.append('Origin','http://localhost:3000');
+
 	const [JobPost, setProducrs] = useState([]);
 	useEffect(() => {
 	 fetch('https://saynadb.000webhostapp.com/oncrring/jobs.php', {
-        mode: 'cors',
-        credentials: 'include',
         method: 'GET',
-        headers: headers
+    mode: 'cors', 
+    cache: 'no-cache', 
     }).then(function(response){
 		 response.json().then(function(data) {
 			 console.log(data);
