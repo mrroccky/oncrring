@@ -7,20 +7,27 @@ import Loading from '../../component/Loading/Loading';
 import Recentpost from '../../component/Recentpost/Recentpost';
 import Search from '../../component/Search/Search';
 import Menuebuttonst from '../../component/menuebuttonst/menuebuttonst';
+import axios from 'axios';
+import { Button } from 'react-bootstrap';
 
 // https://www.stechies.com/
 function Home() {
 
+
 	const [JobPost, setProducrs] = useState([]);
 	useEffect(() => {
-		
-		fetch('/oncrring/jobs.php').then(responce => {
-			return responce.json();
-		}).then(JobPost => {
-			setProducrs(JobPost);
-			console.log(JobPost)
-		})
+	 fetch('https://saynadb.000webhostapp.com/oncrring/jobs.php').then(function(response){
+		 response.json().then(function(data) {
+			 console.log(data);
+			 setProducrs(data)
+		 });
+	 }).catch(function(error) {
+		 console.log('Fetch Error:', error);
+	 });
 	}, [setProducrs]);
+ 
+	
+
 
 	return (
 		<>

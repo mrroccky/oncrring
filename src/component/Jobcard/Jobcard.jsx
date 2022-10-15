@@ -16,7 +16,7 @@ function Jobcard(props) {
           <div className='tcard'><h1 className='font' >{JobPost ? JobPost.tital : <span> error </span>}</h1></div>
           <span className='font100' style={{marginLeft:'20px'}}>{JobPost.date} by </span>
           <span className='font100' style={{ color: 'var(--link)'}}>{JobPost.publisher_name}</span>
-          <div className='postImg'>{JobPost ? <img src={"/oncrring/uploads/" + JobPost.image} /> : <Loading />}</div>
+          <div className='postImg'>{JobPost ? <img src={"https://saynadb.000webhostapp.com/oncrring/uploads/" + JobPost.image} /> : <Loading />}</div>
           
           {JobPost.descreption.split("\n").map(function (descreption) {
             return (

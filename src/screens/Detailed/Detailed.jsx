@@ -20,13 +20,16 @@ function Detailed() {
 	const [JobPost, setJob] = useState([]);
 	useEffect(() => {
 
-		fetch('/oncrring/getbyid.php?id=' + id).then(responce => {
-			return responce.json();
-		}).then(JobPost => {
-			setJob(JobPost);
-			console.log(JobPost)
-		})
-	}, [id]);
+	
+			fetch('https://saynadb.000webhostapp.com/oncrring/getbyid.php?id=' + id).then(function(response){
+				response.json().then(function(data) {
+					console.log(data);
+					setJob(data)
+				});
+			}).catch(function(error) {
+				console.log('Fetch Error:', error);
+			});
+	}, [setJob]);
 	return (
 	
 	

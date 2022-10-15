@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { BrowserRouter as Router , Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
 import Home from './screens/Home/Home';
 import GovtJobs from './screens/GovtJobs/GovtJobs';
 import Navigation from './component/Navbar/Navigation';
