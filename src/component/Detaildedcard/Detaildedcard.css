@@ -9,11 +9,14 @@
   .postCard{
 	align-items: center;
 	justify-content: center;
-
 	padding-bottom: 10px;
 
   }
-  
+
+  .tcard{
+text-align: center;
+	
+  }
   .Mprice {
 	color: grey;
 	font-size: 22px;

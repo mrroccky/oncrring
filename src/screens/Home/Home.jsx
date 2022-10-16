@@ -6,12 +6,11 @@ import { useState } from 'react';
 import Loading from '../../component/Loading/Loading';
 import Recentpost from '../../component/Recentpost/Recentpost';
 import Search from '../../component/Search/Search';
-import Menuebuttonst from '../../component/menuebuttonst/menuebuttonst';
-import axios from 'axios';
-import { Button } from 'react-bootstrap';
-
 // https://www.stechies.com/
+
 function Home() {
+	
+
 
 	let headers = new Headers();
 
@@ -35,14 +34,12 @@ function Home() {
 		 console.log('Fetch Error:', error);
 	 });
 	}, [setProducrs]);
- 
-	
-
-
+	// var element = document.getElementById("scroll");
+	// element.scrollIntoView(false);
 	return (
-		<>
+		< >
+		<div className='scroll'>
 			<div className='left'>
-				<Menuebuttonst />
 				<Search />
 				<div className='cardocd'>
 					<h1 className='ocd'>HOME</h1>
@@ -63,6 +60,7 @@ function Home() {
 				</div>
 
 				</div> */}
+			</div>
 			</div>
 			<div className='right'>
 				<Recentpost />

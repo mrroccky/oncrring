@@ -3,14 +3,10 @@ import Recentpost from '../../component/Recentpost/Recentpost'
 import Search from '../../component/Search/Search';
 import Ocd from '../../component/ocd/ocd'
 import Jobstab from '../../component/onTabsScreens/Jobstab/Jobstab';
-import Menuebuttonst from "../../component/menuebuttonst/menuebuttonst"
 function Jobs() {
   return (
 	<>
-
-
 		<div className='left'>
-			<Menuebuttonst />
 			<Jobstab />
 			<Search />
 			<Recentpost />

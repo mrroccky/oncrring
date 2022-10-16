@@ -1,0 +1,32 @@
+.parant{
+	display: grid;
+	place-items:center;
+}
+.sharepalet{
+	
+	align-content: center;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	box-shadow: var(--box-shadow);
+	padding: 5px;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 5%;
+}
+
+.ShareTeligram{
+margin-left: 20px;
+margin-right: 20px;
+}
+.ShareWhatsapp{
+	
+}
+.ShareClipboard{
+
+}
+.sharepalet:hover{
+	border: 2px solid var(--theme);
+}

@@ -4,15 +4,11 @@ import Ocd from '../../component/ocd/ocd';
 import Topmnc from '../../component/onTabsScreens/TopMNCtab/Topmnc';
 import Recentpost from '../../component/Recentpost/Recentpost';
 import Search from '../../component/Search/Search';
-import Mmenuebuttonst from '../../component/menuebuttonst/menuebuttonst'
 function TopMNC() {
 	
 	return (
 		<>
-
-
 		<div className='left'>
-			<Mmenuebuttonst />
 			<Topmnc />
 			<Search />
 			<Recentpost />
@@ -22,11 +18,7 @@ function TopMNC() {
 			<Recentpost />
 			<Search />
 			<Ocd />
-
 		</div>
-
-
-
 	</>
 	);
   }

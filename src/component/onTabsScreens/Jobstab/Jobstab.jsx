@@ -9,7 +9,7 @@ function Jobstab() {
 			<div className='cardocd'>
 				<div className='card'>
 					<h1 className='ocd'>JobsTab</h1>
-					<Jobcard />
+					{/* <Jobcard /> */}
 				</div>
 
 			</div>

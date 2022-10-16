@@ -2,12 +2,9 @@ body{
 	height: 100%;
   }
 
-
-
   .postCard{
 	justify-content: center;
 	align-items: center;
-
 	min-width: none;
 	background-color: white;
 	box-shadow: var(--box-shadow);

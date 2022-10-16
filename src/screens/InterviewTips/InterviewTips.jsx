@@ -3,7 +3,6 @@ import Ocd from '../../component/ocd/ocd';
 import Interviewtips from '../../component/onTabsScreens/Interviewtipstab/Interviewtips';
 import Recentpost from '../../component/Recentpost/Recentpost';
 import Search from '../../component/Search/Search';
-import Menuebuttonst from "../../component/menuebuttonst/menuebuttonst"
 import './InterviewTips.css';
 
 
@@ -14,7 +13,6 @@ const InterviewTips = () => {
 
 
 		<div className='left'>
-			<Menuebuttonst />
 			<Interviewtips />
 			<Search />
 			<Recentpost />

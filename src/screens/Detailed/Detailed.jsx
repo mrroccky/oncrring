@@ -7,7 +7,6 @@ import Loading from "../../component/Loading/Loading";
 import Ocd from "../../component/ocd/ocd";
 import Recentpost from "../../component/Recentpost/Recentpost";
 import Search from "../../component/Search/Search";
-import Menuebuttonst from "../../component/menuebuttonst/menuebuttonst";
 import './Detailed.css';
 import Comment from "../../component/Comment/Comment";
 
@@ -21,7 +20,7 @@ function Detailed() {
 	useEffect(() => {
 
 	
-			fetch('https://saynadb.000webhostapp.com/oncrring/getbyid.php?id=' + id).then(function(response){
+			fetch('https://saynadb.000webhostapp.com/oncrring/getbyid.php?id='+ id).then(function(response){
 				response.json().then(function(data) {
 					console.log(data);
 					setJob(data)
@@ -35,7 +34,6 @@ function Detailed() {
 	
 		<>
 		<div className='left'>
-		<Menuebuttonst />
 			<Search />
 			<div className='cardocd'>
 				<div className='card'>
