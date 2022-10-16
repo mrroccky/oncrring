@@ -1,13 +1,14 @@
 import React from 'react'
 import './ShareThisJob.css'
-function ShareThisJob() {
+function ShareThisJob(props) {
+  var detais =props.jobdetail
   return (
     <>
    <div className='parant'>
     <div className='sharepalet'>
-      <WhatsappButton />
-      <ShareOnTeligram />
-      <CopyShareLink />
+      <WhatsappButton jobdetail={detais}/>
+      <ShareOnTeligram jobdetail={detais}/>
+      <CopyShareLink jobdetail={detais}/>
       </div>
     </div>      
     </>
@@ -19,25 +20,26 @@ function ShareThisJob() {
 export default ShareThisJob;
 
 
-//copy on clickboard button
-function CopyShareLink() {
+//!copy on clickboard button
+function CopyShareLink(props) {
+  var detais =props.jobdetail
   return (
     <>
-      <a onClick={() => Copy()}><img width={30} height={30} className='ShareClipboard' src='Images/clipboard.svg' /></a>
+      <a onClick={() => Copy(detais)}><img width={30} height={30} className='ShareClipboard' src='Images/clipboard.svg' /></a>
     </>
   )
 }
-function Copy() {
-  var data = "hey there thos is text for copying"
+function Copy(detais ) {
+  
+  var data = detais
   navigator.clipboard.writeText(data)
   alert(" 🚀🚀🚀Link Copyed to 📋📋 ClipBoard now you can share😎👌")
 }
 
-
-//whatsaap button for web
-function WhatsappButton() {
+//!whatsaap button for web
+function WhatsappButton(props) {
   var waplink = "https://web.whatsapp.com/send?text="
-  var jobdetail = "😎🚀🚀🚀🚀🚀"
+  var jobdetail = props.jobdetail
   var CurrentPath = window.location.href
   var massage = waplink.concat(" ", jobdetail, " ", CurrentPath)
   return (<>
@@ -45,14 +47,12 @@ function WhatsappButton() {
   </>)
 }
 
-//share on teligram button
-
-function ShareOnTeligram() {
+//!share on teligram button
+function ShareOnTeligram(props) {
   var teliLink = "https://telegram.me/share/url?url="
-  var JobDetails = "🚀🚀🚀🚀🚀🚀Imageurl"
+  var JobDetails =  props.jobdetail
   var currentPath = window.location.href
   var massage = teliLink.concat(" ", JobDetails, " Apply Now ", currentPath)
-
   return (
     <>
       <a href={massage}><img width={30} height={30} className='ShareTeligram' src='Images/t.png' /></a>

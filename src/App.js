@@ -12,6 +12,7 @@ import Jobs from "./screens/Jobs/Jobs";
 import Detailed from "./screens/Detailed/Detailed";
 import Profile from "./screens/profile/profile";
 import Test from "./Test/Test";
+import Publisher from "./screens/Publishrer/Publisher";
 
 
 
@@ -27,7 +28,8 @@ const App =() =>{
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/test" element={<Test/>} />
         <Route exact path="/jobs" element={<Jobs/>} />
-        <Route exact path="/profile" element={<Profile/>} />
+        <Route exact path="/profile" element={<Profile/>} /> //user profile
+        <Route exact path="/publisher" element={<Publisher/>} />//jobs publisher
         <Route exact path="/topmnc" element={<TopMNC/>} />
         <Route exact path="/govtjobs" element={<GovtJobs/>} />
         <Route exact path="/interviewtips" element={<InterviewTips/>} />

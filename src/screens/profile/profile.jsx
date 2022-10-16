@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileView from './Component/ProfileView'
+import ProfileView from '../../component/ProfileView/ProfileView'
 
 function Profile() {
 	return (
