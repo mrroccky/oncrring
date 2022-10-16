@@ -4,9 +4,10 @@ import Loading from '../Loading/Loading';
 import { Link } from 'react-router-dom'
 function Jobcard(props) {
   const { JobPost } = props;
-
+  var date=JobPost.date;
+    var onlydate =date.split(" ")[0];
   return (
-
+    
 
     // <Jobcard key={JobPost.id} JobPost={JobPost} />
     <>
@@ -14,7 +15,7 @@ function Jobcard(props) {
         <div className='postCard' >
           {/* <h1>{JobPost.id}</h1> */}
           <div className='tcard'><h1 className='font' >{JobPost ? JobPost.tital : <span> error </span>}</h1></div>
-          <span className='font100' style={{marginLeft:'20px'}}>{JobPost.date} by </span>
+          <span className='font100' style={{marginLeft:'20px'}}>{onlydate} by </span>
           <span className='font100' style={{ color: 'var(--link)'}}>{JobPost.publisher_name}</span>
           <div className='postImg'>{JobPost ? <img src={"https://saynadb.000webhostapp.com/oncrring/uploads/" + JobPost.image} /> : <Loading />}</div>
           
