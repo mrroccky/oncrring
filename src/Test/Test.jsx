@@ -5,23 +5,19 @@ import './Test.css';
 export default function Test() {
   return (
 	<>
-	<Button onClick={()=>openNav()}>menue</Button>
-	<div id="mySidenav" class="sidenav">
- 	 <a href="#" class="closebtn" onClick={()=>closeNav()}>&times;</a>
-  	<a href="#">About</a>
-  	<a href="#">Services</a>
-  	<a href="#">Clients</a>
-  	<a href="#">Contact</a>
-	</div>
+	<input type="text"  placeholder='enter publisher id'/>
+	<br/>
+	<input type='file' />
+	<br/>
+	<input type="text"  placeholder='Description'/>
+	<br/>
+	<input type="text"  placeholder='title'/>
+	<br/>
+	<input type="text"  placeholder='link'/>
+	<br/>
+	<Button>Submit</Button>
 	</>
   )
 }
 
 
-function openNav() {
-	document.getElementById("mySidenav").style.width = "250px";
-  }
-
-function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
-}

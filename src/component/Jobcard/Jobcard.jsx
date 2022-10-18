@@ -11,7 +11,7 @@ function Jobcard(props) {
 
     // <Jobcard key={JobPost.id} JobPost={JobPost} />
     <>
-      <Link style={{ color: 'black', textDecoration: 'none' }} to={'/detailed?id=' + JobPost.id} >
+      <Link style={{ color: 'black', textDecoration: 'none' }} to={'/detailed?links=' + JobPost.links} >
         <div className='postCard' >
           {/* <h1>{JobPost.id}</h1> */}
           <div className='tcard'><h1 className='font' >{JobPost ? JobPost.tital : <span> error </span>}</h1></div>
@@ -23,7 +23,6 @@ function Jobcard(props) {
             return (
               <>   
                 <h2 className='font400'>{descreption}</h2>
-                
               </>
             )
           })}

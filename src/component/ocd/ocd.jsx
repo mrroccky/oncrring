@@ -29,13 +29,7 @@ function Ocd() {
 				<Drives Text="Off Campus Drives 2023 Batch"/>
 				<Drives Text="Off Campus Drives 2022 Batch"/>
 				<Drives Text="Off Campus Drives 2021 Batch"/>
-				<Drives Text="Off Campus Drives 2020 Batch"/>
-				<Drives Text="Off Campus Drives 2019 Batch"/>
-				<Drives Text="Off Campus Drives 2018 Batch"/>
-				<Drives Text="Off Campus Drives 2021 Batch"/>
-				<Drives Text="Off Campus Drives 2020 Batch"/>
-				<Drives Text="Off Campus Drives 2019 Batch"/>
-				<Drives Text="Off Campus Drives 2018 Batch"/>
+				
 			
 
 			</div>

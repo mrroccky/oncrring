@@ -25,7 +25,7 @@ function CopyShareLink(props) {
   var detais =props.jobdetail
   return (
     <>
-      <a onClick={() => Copy(detais)}><img width={30} height={30} className='ShareClipboard' src='Images/clipboard.svg' /></a>
+      <a onClick={() => Copy(detais)}><img width={30} height={30} className='ShareClipboard' src='images/clipboard.svg' /></a>
     </>
   )
 }
@@ -43,7 +43,7 @@ function WhatsappButton(props) {
   var CurrentPath = window.location.href
   var massage = waplink.concat(" ", jobdetail, " ", CurrentPath)
   return (<>
-    <a href={massage} ><img width={30} height={30} className='ShareWhatsapp' src='Images/w.png' /></a>
+    <a href={massage} ><img width={30} height={30} className='ShareWhatsapp' src='images/w.png' /></a>
   </>)
 }
 
@@ -55,7 +55,7 @@ function ShareOnTeligram(props) {
   var massage = teliLink.concat(" ", JobDetails, " Apply Now ", currentPath)
   return (
     <>
-      <a href={massage}><img width={30} height={30} className='ShareTeligram' src='Images/t.png' /></a>
+      <a href={massage}><img width={30} height={30} className='ShareTeligram' src='images/t.png' /></a>
     </>
   )
 }

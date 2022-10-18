@@ -9,6 +9,7 @@ import './Navbar.css';
 
 
 
+
 const Navigation = () => {
 	const navigate = useNavigate();
 	const gotohome = () => {
@@ -17,12 +18,12 @@ const Navigation = () => {
 	return (
 		<><nav className='navbar'>
 			<Button className='nonbtn' onClick={() => openNav()}>
-				<img width={30} height={30} className='menu' src='Images/menu.png' />
+				<img width={30} height={30} className='menu' src='images/menu.png' />
 			</Button>
 			<Daraver />
 			<button className='nonbtn' onClick={gotohome}>
 				<div className='ImgTital'>
-					<img className='logoimg' src='/Images/clogo.jpg' />
+					<img className='logoimg' src='images/clogo.jpg' />
 					<h4 className='tital'  >oncrring Jobs</h4>
 				</div>
 			</button>

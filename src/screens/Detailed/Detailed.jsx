@@ -14,16 +14,17 @@ import Comment from "../../component/Comment/Comment";
 function Detailed() {
 	const location = useLocation();
 	const params = new URLSearchParams(location.search);
-	var id = params.get("id");
-
+	var links = params.get("links");
 	const [JobPost, setJob] = useState([]);
 	useEffect(() => {
-
+		// http://localhost:3000/detailed?detailded%3Flinks%3D=kkkk
+		// http://localhost:3000/detailed?links=googlejobs
 	
-			fetch('https://saynadb.000webhostapp.com/oncrring/getbyid.php?id='+ id).then(function(response){
+			fetch('https://saynadb.000webhostapp.com/oncrring/getbylink.php?links='+ links).then(function(response){
 				response.json().then(function(data) {
 					console.log(data);
 					setJob(data)
+					console.log("heeeeyyey"+data)
 				});
 			}).catch(function(error) {
 				console.log('Fetch Error:', error);
@@ -35,6 +36,7 @@ function Detailed() {
 		<>
 		<div className='left'>
 			<Search />
+			<h1>{JobPost.id}</h1>
 			<div className='cardocd'>
 				<div className='card'>
 					<h1 className='ocd'>DetailedCard</h1>

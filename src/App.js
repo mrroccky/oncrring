@@ -34,8 +34,10 @@ const App =() =>{
         <Route exact path="/govtjobs" element={<GovtJobs/>} />
         <Route exact path="/interviewtips" element={<InterviewTips/>} />
 
+
         {/* when we click on any jop well pass id then load that id data from db in Detailed screen */}
         <Route exact path="/detailed" element={<Detailed/>} />
+        {/* http://localhost:3000/?link */}
         {/* interview tips */}
         </Routes>
     </Router></>
