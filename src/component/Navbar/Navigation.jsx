@@ -40,7 +40,7 @@ function NavigatorPC() {
 		<>
 			<ul className='menue'>
 				<li className='mBtn'><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/">Home</Link></li>
-				<li className='mBtn'><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/jobs">Jobs</Link></li>
+				<li className='mBtn'><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/jobs">Upcoming Jobs</Link></li>
 				<li className='mBtn'><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/govtjobs">Government Jobs</Link></li>
 				<li className='mBtn'><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/topmnc">Top MNC</Link></li>
 				<li className='mBtn'><Link style={{ color: "white", textDecoration: 'none' }} to="/interviewtips">Interview Tips</Link></li>

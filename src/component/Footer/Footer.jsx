@@ -1,26 +1,66 @@
 import React from 'react'
 import './Footer.css'
-function Footer() {
+export default function Footer() {
 
 	
   return (
-	<div class="nav-down">
-	<div className='fotter'>
-		<h1 className='font100'>🅾️🅽🅲🆁🆁🅸🅽🅶    is an online platform to help the jobseekers who are searching for the jobs. 
-			We Provide off campus drives for freshers.</h1>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="https://www.facebook.com/oncrring"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="https://twitter.com/oncrring"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="https://www.instagram.com/oncrring_/"><i class="fa fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="https://www.linkedin.com/company/oncrring/"><i class="fa fa-linkedin"></i></a></li>
-			  <li><a class="twitter" href="https://t.me/oncrring/"><i class="fa fa-paper-plane"></i></a></li>   
-			  <li><a class="dribbble" href="https://chat.whatsapp.com/IVlbM2X0Es3AXgWAzvvQuu/"><i class="fa fa-whatsapp"></i></a></li>   
-            </ul>
-          </div>
-		  <div className='copyright'><h3  className='font100'>© 2022 Oncrring • Built with 💞 in 🅸🅽🅳🅸🅰</h3></div>
-		  </div></div>
+	<>
+  <div className='footerBar' style={{'background':'black'}}> 
+	<h1 className='font100' style={{'color':'white'}}>🅾️🅽🅲🆁🆁🅸🅽🅶 is an online platform to help the jobseekers who are searching for the jobs.</h1>
+	<h1 className='font100' style={{'color':'white'}}>Get Quick Job Updates on
+	<span className='font100' style={{'color':'white'}}>
+		<Whatsapp/>
+		<Facebook/>
+		<Teligram/>
+		<Instagram/>
+		<Liknkedin/>
+		<Tweeter/>
+	</span>
+	</h1>
+	
+	<h1 className='font100' style={{'color':'white'}}>© 2022 🅾️🅽🅲🆁🆁🅸🅽🅶 made in INDIA with ❤️❤️💕</h1>
+	
+	</div>
+  </>
   )
 }
 
-export default Footer
+function Whatsapp() {
+	var link ='https://chat.whatsapp.com/IVlbM2X0Es3AXgWAzvvQuu/'
+	return (<>
+	  <a style={{'marginLeft':' 6px'}} href={link} ><img width={30} height={30}   src='Images/w.png' /></a>
+	</>)
+  }
+
+  function Facebook() {
+	var link ='https://www.facebook.com/oncrring'
+	return (<>
+	  <a style={{'marginLeft':' 6px'}} href={link} ><img width={30} height={30}   src='Images/f.png' /></a>
+	</>)
+  }
+  function Teligram() {
+	var link ='https://t.me/oncrring'
+	return (<>
+	  <a href={link} style={{'marginLeft':' 6px'}} ><img width={30} height={30}   src='Images/t.png' /></a>
+	</>)
+  }
+  function Instagram() {
+	var link ='https://www.instagram.com/oncrring_/'
+	return (<>
+	  <a href={link} ><img width={50} height={30}   src='Images/i.png' /></a>
+	</>)
+  }
+
+  function Liknkedin() {
+	var link ='https://www.linkedin.com/company/oncrring/'
+	return (<>
+	  <a href={link} style={{'marginLeft':' 1px'}}  ><img width={30} height={30}   src='Images/li.png' /></a>
+	</>)
+  }
+
+  function Tweeter() {
+	var link ='https://twitter.com/oncrring'
+	return (<>
+	  <a href={link} style={{'marginLeft':' 6px'}} ><img width={30} height={30}   src='Images/twe.png' /></a>
+	</>)
+  }

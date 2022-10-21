@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Loading from '../../component/Loading/Loading';
 import Recentpost from '../../component/Recentpost/Recentpost';
 import Search from '../../component/Search/Search';
-// https://www.stechies.com/
+import Footer from '../../component/Footer/Footer';
 
 function Home() {
 	
@@ -21,13 +21,12 @@ function Home() {
 
 	const [JobPost, setProducrs] = useState([]);
 	useEffect(() => {
-	 fetch('https://saynadb.000webhostapp.com/oncrring/jobs.php', {
+	 fetch(process.env.REACT_APP_JOBS_ENDPOINT, {
         method: 'GET',
     mode: 'cors', 
     cache: 'no-cache', 
     }).then(function(response){
 		 response.json().then(function(data) {
-			 console.log(data);
 			 setProducrs(data)
 		 });
 	 }).catch(function(error) {
@@ -46,20 +45,10 @@ function Home() {
 					{!JobPost ? <Loading /> : JobPost.map(JobPost => <Jobcard key={JobPost.id} JobPost={JobPost}/>)}
 					<Recentpost />
 					<Ocd />
+					<Footer/>
 					<div className='LoadMore'>
 					</div>
 				</div>
-				{/* <div className='cardocd'>
-					<div className='card'>
-						<h1 className='ocd'>Home Best Jobs</h1>
-					</div>
-					{!JobPost ? <Loading /> : JobPost.map(JobPost => <Jobcard key={JobPost.id} JobPost={JobPost} />)}
-					<Recentpost />
-					<Ocd />
-					<div className='LoadMore'>
-				</div>
-
-				</div> */}
 			</div>
 			</div>
 			<div className='right'>

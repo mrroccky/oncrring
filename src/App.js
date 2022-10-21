@@ -8,7 +8,7 @@ import Navigation from './component/Navbar/Navigation';
 import './App.css';
 import TopMNC from "./screens/TopMNC/TopMNC";
 import InterviewTips from "./screens/InterviewTips/InterviewTips";
-import Jobs from "./screens/Jobs/Jobs";
+import Upcoming from "./screens/Jobs/Upcoming";
 import Detailed from "./screens/Detailed/Detailed";
 import Profile from "./screens/profile/profile";
 import Test from "./Test/Test";
@@ -27,7 +27,7 @@ const App =() =>{
         <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/test" element={<Test/>} />
-        <Route exact path="/jobs" element={<Jobs/>} />
+        <Route exact path="/jobs" element={<Upcoming/>} />
         <Route exact path="/profile" element={<Profile/>} /> //user profile
         <Route exact path="/publisher" element={<Publisher/>} />//jobs publisher
         <Route exact path="/topmnc" element={<TopMNC/>} />

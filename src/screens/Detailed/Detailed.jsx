@@ -9,22 +9,22 @@ import Recentpost from "../../component/Recentpost/Recentpost";
 import Search from "../../component/Search/Search";
 import './Detailed.css';
 import Comment from "../../component/Comment/Comment";
+import Footer from "../../component/Footer/Footer";
 
 
 function Detailed() {
 	const location = useLocation();
 	const params = new URLSearchParams(location.search);
 	var links = params.get("links");
+	var ocd =params.get("ocd");
+	var recent=params.get("recent");
+	
 	const [JobPost, setJob] = useState([]);
 	useEffect(() => {
-		// http://localhost:3000/detailed?detailded%3Flinks%3D=kkkk
-		// http://localhost:3000/detailed?links=googlejobs
 	
 			fetch('https://saynadb.000webhostapp.com/oncrring/getbylink.php?links='+ links).then(function(response){
 				response.json().then(function(data) {
-					console.log(data);
 					setJob(data)
-					console.log("heeeeyyey"+data)
 				});
 			}).catch(function(error) {
 				console.log('Fetch Error:', error);
@@ -45,8 +45,10 @@ function Detailed() {
 			
 			</div>
 			<alert />
-			<hr />
-			<Comment />
+			<Footer/>
+
+			{/* <hr /> */}
+			{/* <Comment /> */}
 		</div>
 		<div className='right'>
 			<Recentpost />

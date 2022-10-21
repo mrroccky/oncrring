@@ -1,4 +1,5 @@
 
+import Footer from '../../component/Footer/Footer';
 import Ocd from '../../component/ocd/ocd';
 import Interviewtips from '../../component/onTabsScreens/Interviewtipstab/Interviewtips';
 import Recentpost from '../../component/Recentpost/Recentpost';
@@ -17,6 +18,8 @@ const InterviewTips = () => {
 			<Search />
 			<Recentpost />
 			<Ocd />
+			<Footer/>
+
 		</div>
 		<div className='right'>
 			<Recentpost />

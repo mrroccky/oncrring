@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../component/Footer/Footer';
 import Ocd from '../../component/ocd/ocd';
 import Govermentjobs from '../../component/onTabsScreens/Governmentjobstab/Governmentjobs';
 import Recentpost from '../../component/Recentpost/Recentpost';
@@ -10,10 +11,12 @@ function GovtJobs() {
   return (
   <>
 		<div className='left'>
-			<Govermentjobs />
 			<Search/>
+			<Govermentjobs />
 			<Recentpost />
 			<Ocd/>
+			<Footer/>
+
 		</div>
 		<div className='right'>
 			<Recentpost />

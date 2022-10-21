@@ -18,7 +18,14 @@ function Detaildedcard(props) {
         <span style={{ color: 'var(--link)'}} className='postBy'>{JobPost.publisher_name}</span>
         </Link>
         <div className='postImg'>{JobPost ? <img src={"https://saynadb.000webhostapp.com/oncrring/uploads/" + JobPost.image} /> : <Loading/>}</div>
-        <h2 className='font400'>{JobPost.descreption}</h2>
+        {/* <h2 className='font400'>{JobPost.descreption}</h2> */}
+        {JobPost.descreption.split("\n").map(function (descreption) {
+            return (
+              <>   
+                <h2 className='font400'>{descreption}</h2>
+              </>
+            )
+          })}
         <ShareThisJob jobdetail="this is detail"/>
       </div>
      

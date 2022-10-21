@@ -3,6 +3,7 @@ import Recentpost from '../../component/Recentpost/Recentpost'
 import Search from '../../component/Search/Search';
 import Ocd from '../../component/ocd/ocd'
 import Jobstab from '../../component/onTabsScreens/Jobstab/Jobstab';
+import Footer from '../../component/Footer/Footer';
 function Jobs() {
   return (
 	<>
@@ -11,6 +12,8 @@ function Jobs() {
 			<Search />
 			<Recentpost />
 			<Ocd />
+			<Footer/>
+
 		</div>
 		<div className='right'>
 			<Recentpost />

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Footer from '../../component/Footer/Footer';
 import Ocd from '../../component/ocd/ocd';
 import Topmnc from '../../component/onTabsScreens/TopMNCtab/Topmnc';
 import Recentpost from '../../component/Recentpost/Recentpost';
@@ -13,6 +14,7 @@ function TopMNC() {
 			<Search />
 			<Recentpost />
 			<Ocd />
+			<Footer/>
 		</div>
 		<div className='right'>
 			<Recentpost />
