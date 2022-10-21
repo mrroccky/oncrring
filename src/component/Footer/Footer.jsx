@@ -28,39 +28,39 @@ export default function Footer() {
 function Whatsapp() {
 	var link ='https://chat.whatsapp.com/IVlbM2X0Es3AXgWAzvvQuu/'
 	return (<>
-	  <a style={{'marginLeft':' 6px'}} href={link} ><img width={30} height={30}   src='Images/w.png' /></a>
+	  <a style={{'marginLeft':' 6px'}} href={link} ><img width={30} height={30}   src='images/w.png' /></a>
 	</>)
   }
 
   function Facebook() {
 	var link ='https://www.facebook.com/oncrring'
 	return (<>
-	  <a style={{'marginLeft':' 6px'}} href={link} ><img width={30} height={30}   src='Images/f.png' /></a>
+	  <a style={{'marginLeft':' 6px'}} href={link} ><img width={30} height={30}   src='images/f.png' /></a>
 	</>)
   }
   function Teligram() {
 	var link ='https://t.me/oncrring'
 	return (<>
-	  <a href={link} style={{'marginLeft':' 6px'}} ><img width={30} height={30}   src='Images/t.png' /></a>
+	  <a href={link} style={{'marginLeft':' 6px'}} ><img width={30} height={30}   src='images/t.png' /></a>
 	</>)
   }
   function Instagram() {
 	var link ='https://www.instagram.com/oncrring_/'
 	return (<>
-	  <a href={link} ><img width={50} height={30}   src='Images/i.png' /></a>
+	  <a href={link} ><img width={50} height={30}   src='images/i.png' /></a>
 	</>)
   }
 
   function Liknkedin() {
 	var link ='https://www.linkedin.com/company/oncrring/'
 	return (<>
-	  <a href={link} style={{'marginLeft':' 1px'}}  ><img width={30} height={30}   src='Images/li.png' /></a>
+	  <a href={link} style={{'marginLeft':' 1px'}}  ><img width={30} height={30}   src='images/li.png' /></a>
 	</>)
   }
 
   function Tweeter() {
 	var link ='https://twitter.com/oncrring'
 	return (<>
-	  <a href={link} style={{'marginLeft':' 6px'}} ><img width={30} height={30}   src='Images/twe.png' /></a>
+	  <a href={link} style={{'marginLeft':' 6px'}} ><img width={30} height={30}   src='images/twe.png' /></a>
 	</>)
   }
