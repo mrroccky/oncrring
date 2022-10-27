@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Apply from '../Apply/Apply';
 import Loading from '../Loading/Loading';
 import ShareThisJob from '../ShareThisJob/ShareThisJob';
 import './Detaildedcard.css'
@@ -26,7 +27,8 @@ function Detaildedcard(props) {
               </>
             )
           })}
-        <ShareThisJob jobdetail="this is detail"/>
+          <Apply linkcontent={JobPost.applylink}/>
+        <ShareThisJob jobdetail={JobPost.descreption}/>
       </div>
      
 	</>

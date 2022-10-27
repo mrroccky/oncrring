@@ -1,0 +1,13 @@
+
+
+.Apply{
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	align-self: center;
+	margin: auto;
+	text-decoration: underline;
+}
+.ApplyNowButton:hover{
+	border-radius:2px solid var(--theme);
+}
