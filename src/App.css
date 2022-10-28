@@ -37,9 +37,10 @@ body{
 }
 /* !medium */
 .font400{
+  padding: 5px;
   align-items: center;
     justify-Content: center;
-    text-align: center;
+    text-align: start;
     align-self: center;
   font-size: 18px;
   font-weight: 300;
