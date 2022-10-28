@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import InterstaialAdbypropeler from '../../Ads/InterstaialAdbypropeler';
 import Apply from '../Apply/Apply';
 import Loading from '../Loading/Loading';
 import ShareThisJob from '../ShareThisJob/ShareThisJob';
@@ -27,6 +28,7 @@ function Detaildedcard(props) {
               </>
             )
           })}
+         <InterstaialAdbypropeler/>
           <Apply linkcontent={JobPost.applylink}/>
         <ShareThisJob jobdetail={JobPost.descreption}/>
       </div>

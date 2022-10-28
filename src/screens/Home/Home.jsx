@@ -7,6 +7,8 @@ import Loading from '../../component/Loading/Loading';
 import Recentpost from '../../component/Recentpost/Recentpost';
 import Search from '../../component/Search/Search';
 import Footer from '../../component/Footer/Footer';
+import Revenuehistaddsidebanner from '../../Ads/revenuehistaddsidebanner';
+import RevenuehitstopbarAdd from '../../Ads/RevenuehitstopbarAdd';
 
 function Home() {
 	
@@ -38,6 +40,7 @@ function Home() {
 	return (
 		< >
 		<div className='scroll'>
+			<RevenuehitstopbarAdd/>
 			<div className='left'>
 				<Search />
 				<div className='cardocd'>
@@ -55,7 +58,7 @@ function Home() {
 				<Recentpost />
 				<Search />
 				<Ocd />
-
+				<Revenuehistaddsidebanner/>
 			</div>
 				{/* <div><Footer /></div> */}
 
