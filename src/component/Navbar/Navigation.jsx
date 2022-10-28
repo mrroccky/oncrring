@@ -6,10 +6,6 @@ import './Navbar.css';
 
 
 
-
-
-
-
 const Navigation = () => {
 	const navigate = useNavigate();
 	const gotohome = () => {
@@ -24,7 +20,7 @@ const Navigation = () => {
 			<button className='nonbtn' onClick={gotohome}>
 				<div className='ImgTital'>
 					<img className='logoimg' src='images/clogo.jpg' />
-					<h4 className='tital'  >oncrring Jobs</h4>
+					<h4 className='tital'  >Saynaa Jobs</h4>
 				</div>
 			</button>
 			<NavigatorPC />
@@ -44,6 +40,8 @@ function NavigatorPC() {
 				<li className='mBtn'><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/govtjobs">Government Jobs</Link></li>
 				<li className='mBtn'><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/topmnc">Top MNC</Link></li>
 				<li className='mBtn'><Link style={{ color: "white", textDecoration: 'none' }} to="/interviewtips">Interview Tips</Link></li>
+				<li className='mBtn'><Link style={{ color: "white", textDecoration: 'none' }} to="/blog">Blog</Link></li>
+
 			</ul>
 		</>
 	)
@@ -59,6 +57,7 @@ function Daraver() {
 			<a href="govtjobs">Govtjobs</a>
 			<a href="topmnc">Topmnc</a>
 			<a href="interviewtips">Interviewtips</a>
+			<a href="blog">Blog</a>
 
 		</div>
 		</>

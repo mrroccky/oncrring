@@ -30,7 +30,7 @@ function Detaildedcard(props) {
           })}
          <InterstaialAdbypropeler/>
           <Apply linkcontent={JobPost.applylink}/>
-        <ShareThisJob jobdetail={JobPost.descreption}/>
+        <ShareThisJob jobdetail={JobPost.tital}/>
       </div>
      
 	</>

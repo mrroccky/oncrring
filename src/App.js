@@ -13,6 +13,7 @@ import Detailed from "./screens/Detailed/Detailed";
 import Profile from "./screens/profile/profile";
 import Test from "./Test/Test";
 import Publisher from "./screens/Publishrer/Publisher";
+import Blog from "./Blog/Blog";
 
 
 
@@ -33,6 +34,8 @@ const App =() =>{
         <Route exact path="/topmnc" element={<TopMNC/>} />
         <Route exact path="/govtjobs" element={<GovtJobs/>} />
         <Route exact path="/interviewtips" element={<InterviewTips/>} />
+        <Route exact path="/blog" element={<Blog/>} />
+
 
 
         {/* when we click on any jop well pass id then load that id data from db in Detailed screen */}
