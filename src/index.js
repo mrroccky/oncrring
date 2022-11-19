@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import App from './App';
 import './index.css';
  
@@ -16,4 +18,6 @@ root.render(
    <div className='body'> <App /></div>
 
 );
+serviceWorkerRegistration.unregister();
 
+reportWebVitals();
