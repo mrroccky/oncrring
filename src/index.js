@@ -18,6 +18,6 @@ root.render(
    <div className='body'> <App /></div>
 
 );
-serviceWorkerRegistration.unregister();
+serviceWorkerRegistration.register();
 
 reportWebVitals();
